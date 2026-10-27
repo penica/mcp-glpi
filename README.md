@@ -299,6 +299,8 @@ Once configured, you can ask Claude to:
 
 ## Development
 
+See the [GLPI 12 API v3 migration research](docs/glpi-high-level-api-migration.md) and [migration log](docs/migration-log.md) for the planned move from the legacy API.
+
 ### Building from source
 
 ```bash
