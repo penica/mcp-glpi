@@ -632,7 +632,7 @@ export class GlpiClient {
     return response.json() as Promise<T>;
   }
 
-  private async createItem<T>(itemtype: string, data: Record<string, any>): Promise<{ id: number; message?: string }> {
+  private async createItem(itemtype: string, data: Record<string, any>): Promise<{ id: number; message?: string }> {
     await this.ensureSession();
 
     const response = await fetch(`${this.config.url}/apirest.php/${itemtype}`, {

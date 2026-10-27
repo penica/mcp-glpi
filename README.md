@@ -310,6 +310,8 @@ npm install
 npm run build
 ```
 
+Run `npm run lint` to check the TypeScript and configuration files, and `npm test` to run Jest. Jest is configured, but there are no tests yet.
+
 ### Running locally
 
 ```bash

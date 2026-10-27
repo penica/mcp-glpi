@@ -13,7 +13,7 @@
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "prepublishOnly": "npm run build",
-    "lint": "eslint src/**/*.ts",
+    "lint": "eslint .",
     "test": "jest"
   },
   "keywords": [
@@ -57,8 +57,14 @@
     "@modelcontextprotocol/sdk": "^1.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@types/jest": "^29.5.14",
     "@types/node": "^20.10.0",
-    "typescript": "^5.3.0"
+    "eslint": "^9.39.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.4.15",
+    "typescript": "^5.3.0",
+    "typescript-eslint": "^8.72.1"
   },
   "files": [
     "dist",

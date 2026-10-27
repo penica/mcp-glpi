@@ -10,4 +10,5 @@ This log tracks decisions, research, implementation, and verification for moving
 - Decided the target is **GLPI 12 with the latest High-Level API, v3**. Request paths will pin major version 3. GLPI 11 and API v2 are outside the migration target.
 - Verified the unmodified upstream project builds with `npm ci --ignore-scripts` and `npm run build`.
 - Started `CHANGELOG.md` to track release notes separately from this implementation log. Its first entry is marked Unreleased because the research has not changed runtime behavior.
+- Added `AGENTS.md` contributor guidance and installed Jest and ESLint for migration work. Jest is configured but has no tests yet.
 - Next: obtain a GLPI 12 v3 OpenAPI document, map each MCP tool to concrete operations and schemas, then implement the new transport and adapters.

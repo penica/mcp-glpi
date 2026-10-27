@@ -6,15 +6,15 @@ This is a TypeScript MCP server. `src/index.ts` defines MCP tools, resources, co
 
 ## Build, Test, and Development Commands
 
-Use Node.js 18 or newer. Run `npm ci` to install from the lockfile and `npm run build` to compile `src/` into `dist/`; `npm run watch` recompiles during development. Run `npm start` after building and setting `GLPI_URL` plus the current legacy API credentials described in `README.md`. The `dev`, `test`, and `lint` scripts exist, but their `ts-node`, Jest, and ESLint dependencies are not installed; configure them before treating those scripts as working checks.
+Use Node.js 18.18 or newer for development. Run `npm ci` to install from the lockfile and `npm run build` to compile `src/` into `dist/`; `npm run watch` recompiles during development. Run `npm run lint` for ESLint and `npm test` for Jest. Run `npm start` after building and setting `GLPI_URL` plus the current legacy API credentials described in `README.md`. The `dev` script still requires `ts-node`, which is not installed.
 
 ## Coding Style & Naming Conventions
 
-Follow the existing two-space indentation, single quotes, and semicolons. TypeScript uses strict checking, ES2022, and NodeNext modules. Use `PascalCase` for classes and interfaces, `camelCase` for TypeScript methods and variables, and `glpi_snake_case` for public MCP tool names. Keep HTTP authentication and request handling in the client rather than duplicating it in tool handlers.
+Follow the existing two-space indentation, single quotes, and semicolons. TypeScript uses strict checking, ES2022, and NodeNext modules. ESLint rules are in `eslint.config.mjs`. Use `PascalCase` for classes and interfaces, `camelCase` for TypeScript methods and variables, and `glpi_snake_case` for public MCP tool names. Keep HTTP authentication and request handling in the client rather than duplicating it in tool handlers.
 
 ## Testing Guidelines
 
-No test framework is configured and no coverage threshold exists. When adding tests, install and configure the runner in the same change; name tests `*.test.ts` and cover API authentication, payload mapping, pagination, and errors. Verify GLPI 12 v3 behavior against its versioned OpenAPI document and a disposable instance before claiming endpoint compatibility.
+Jest is configured in `jest.config.cjs`, but there are no tests or coverage thresholds yet. Put new tests in `tests/` with `*.test.ts` names; cover API authentication, payload mapping, pagination, and errors. `npm test` currently reports no tests and exits successfully. Verify GLPI 12 v3 behavior against its versioned OpenAPI document and a disposable instance before claiming endpoint compatibility.
 
 ## Commit & Pull Request Guidelines
 
