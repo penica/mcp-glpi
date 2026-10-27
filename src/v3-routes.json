@@ -1,0 +1,4748 @@
+{
+  "/": [
+    "GET"
+  ],
+  "/Administration/ApprovalSubstitute": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/ApprovalSubstitute/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Administration/Entity": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/Entity/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/Entity/{items_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/Entity/{items_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/EventLog": [
+    "GET"
+  ],
+  "/Administration/EventLog/{id}": [
+    "GET"
+  ],
+  "/Administration/Group": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/Group/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/Profile": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/Profile/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/User": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/User/Me": [
+    "GET"
+  ],
+  "/Administration/User/Me/Email": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/User/Me/Email/{id}": [
+    "GET"
+  ],
+  "/Administration/User/Me/Emails/Default": [
+    "GET"
+  ],
+  "/Administration/User/Me/ManagedItem": [
+    "GET"
+  ],
+  "/Administration/User/Me/Picture": [
+    "GET"
+  ],
+  "/Administration/User/Me/Preference": [
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/User/Me/UsedItem": [
+    "GET"
+  ],
+  "/Administration/User/username/{username}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/User/username/{username}/ManagedItem": [
+    "GET"
+  ],
+  "/Administration/User/username/{username}/Picture": [
+    "GET"
+  ],
+  "/Administration/User/username/{username}/UsedItem": [
+    "GET"
+  ],
+  "/Administration/User/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/User/{id}/ManagedItem": [
+    "GET"
+  ],
+  "/Administration/User/{id}/Picture": [
+    "GET"
+  ],
+  "/Administration/User/{id}/Preference": [
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/User/{id}/UsedItem": [
+    "GET"
+  ],
+  "/Administration/User/{username}/Preference": [
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/User/{users_id}/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/User/{users_id}/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/UserCategory": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/UserCategory/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Administration/UserTitle": [
+    "GET",
+    "POST"
+  ],
+  "/Administration/UserTitle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Appliance/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Appliance/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/": [
+    "GET"
+  ],
+  "/Assets/Appliance": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/Antivirus": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/Antivirus/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/Appliance": [
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/Appliance/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Assets/Appliance/{asset_id}/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/PeripheralConnection": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/PeripheralConnection/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/Project": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/RemoteManagement": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/RemoteManagement/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/SoftwareInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/SoftwareInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/VirtualMachine": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/VirtualMachine/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{asset_id}/Volume": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Appliance/{asset_id}/Volume/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Appliance/{id}/Component/Battery": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/Camera": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/Case": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/Controller": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/Drive": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/Firmware": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/GenericDevice": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/GraphicCard": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/HardDrive": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/Memory": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/NetworkCard": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/PCIDevice": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/PowerSupply": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/Processor": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/SIMCard": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/Sensor": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/SoundCard": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Component/Systemboard": [
+    "GET"
+  ],
+  "/Assets/Appliance/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Cable": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Cable/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Cable/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Cartridge": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Cartridge/{cartridgeitems_id}": [
+    "POST"
+  ],
+  "/Assets/Cartridge/{cartridgeitems_id}/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Cartridge/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Cartridge/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/CartridgeItem/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/Antivirus": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/Antivirus/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{asset_id}/Appliance": [
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/Appliance/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Assets/Certificate/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{asset_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{asset_id}/PeripheralConnection": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/PeripheralConnection/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{asset_id}/Project": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{asset_id}/RemoteManagement": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/RemoteManagement/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{asset_id}/SoftwareInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/SoftwareInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{asset_id}/VirtualMachine": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/VirtualMachine/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{asset_id}/Volume": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Certificate/{asset_id}/Volume/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Certificate/{id}/Component/Battery": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/Camera": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/Case": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/Controller": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/Drive": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/Firmware": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/GenericDevice": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/GraphicCard": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/HardDrive": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/Memory": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/NetworkCard": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/PCIDevice": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/PowerSupply": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/Processor": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/SIMCard": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/Sensor": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/SoundCard": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Component/Systemboard": [
+    "GET"
+  ],
+  "/Assets/Certificate/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Computer": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/Antivirus": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/Antivirus/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/Appliance": [
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/Appliance/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Assets/Computer/{asset_id}/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/Line": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/Line/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/PeripheralConnection": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/PeripheralConnection/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/Project": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/RemoteManagement": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/RemoteManagement/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/SoftwareInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/SoftwareInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/VirtualMachine": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/VirtualMachine/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{asset_id}/Volume": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Computer/{asset_id}/Volume/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Computer/{id}/Component/Battery": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/Camera": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/Case": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/Controller": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/Drive": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/Firmware": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/GenericDevice": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/GraphicCard": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/HardDrive": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/Memory": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/NetworkCard": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/PCIDevice": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/PowerSupply": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/Processor": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/SIMCard": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/Sensor": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/SoundCard": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Component/Systemboard": [
+    "GET"
+  ],
+  "/Assets/Computer/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Consumable": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Consumable/{consumableitems_id}": [
+    "POST"
+  ],
+  "/Assets/Consumable/{consumableitems_id}/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Consumable/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Consumable/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/ConsumableItem/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Custom/": [
+    "GET"
+  ],
+  "/Assets/Custom/{itemtype}": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Custom/{itemtype}/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Custom/{itemtype}Model": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Custom/{itemtype}Model/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Custom/{itemtype}Type": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Custom/{itemtype}Type/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/DCRoom/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/DCRoom/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Enclosure": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Enclosure/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Enclosure/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Enclosure/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Enclosure/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Global": [
+    "GET"
+  ],
+  "/Assets/Monitor": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/Antivirus": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/Antivirus/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{asset_id}/Appliance": [
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/Appliance/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Assets/Monitor/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{asset_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{asset_id}/PeripheralConnection": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/PeripheralConnection/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{asset_id}/Project": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{asset_id}/RemoteManagement": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/RemoteManagement/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{asset_id}/SoftwareInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/SoftwareInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{asset_id}/VirtualMachine": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/VirtualMachine/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{asset_id}/Volume": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Monitor/{asset_id}/Volume/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Monitor/{id}/Component/Battery": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/Camera": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/Case": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/Controller": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/Drive": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/Firmware": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/GenericDevice": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/GraphicCard": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/HardDrive": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/Memory": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/NetworkCard": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/PCIDevice": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/PowerSupply": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/Processor": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/SIMCard": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/Sensor": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/SoundCard": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Component/Systemboard": [
+    "GET"
+  ],
+  "/Assets/Monitor/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Antivirus": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Antivirus/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Appliance": [
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Appliance/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Line": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Line/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/PeripheralConnection": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/PeripheralConnection/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Project": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/RemoteManagement": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/RemoteManagement/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/SoftwareInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/SoftwareInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/VirtualMachine": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/VirtualMachine/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Volume": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/NetworkEquipment/{asset_id}/Volume/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Battery": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Camera": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Case": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Controller": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Drive": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Firmware": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/GenericDevice": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/GraphicCard": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/HardDrive": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Memory": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/NetworkCard": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/PCIDevice": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/PowerSupply": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Processor": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/SIMCard": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Sensor": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/SoundCard": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Component/Systemboard": [
+    "GET"
+  ],
+  "/Assets/NetworkEquipment/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/PDU": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/PDU/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/PDU/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/PDU/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/PDU/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/PassiveDCEquipment": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/PassiveDCEquipment/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/PassiveDCEquipment/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Peripheral": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/Antivirus": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/Antivirus/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/Appliance": [
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/Appliance/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Assets/Peripheral/{asset_id}/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/Line": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/Line/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/PeripheralConnection": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/PeripheralConnection/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/Project": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/RemoteManagement": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/RemoteManagement/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/SoftwareInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/SoftwareInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/VirtualMachine": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/VirtualMachine/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{asset_id}/Volume": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Peripheral/{asset_id}/Volume/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Peripheral/{id}/Component/Battery": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/Camera": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/Case": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/Controller": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/Drive": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/Firmware": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/GenericDevice": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/GraphicCard": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/HardDrive": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/Memory": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/NetworkCard": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/PCIDevice": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/PowerSupply": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/Processor": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/SIMCard": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/Sensor": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/SoundCard": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Component/Systemboard": [
+    "GET"
+  ],
+  "/Assets/Peripheral/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Phone": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/Antivirus": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/Antivirus/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/Appliance": [
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/Appliance/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Assets/Phone/{asset_id}/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/Line": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/Line/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/PeripheralConnection": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/PeripheralConnection/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/Project": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/RemoteManagement": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/RemoteManagement/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/SoftwareInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/SoftwareInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/VirtualMachine": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/VirtualMachine/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{asset_id}/Volume": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Phone/{asset_id}/Volume/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Phone/{id}/Component/Battery": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/Camera": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/Case": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/Controller": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/Drive": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/Firmware": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/GenericDevice": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/GraphicCard": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/HardDrive": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/Memory": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/NetworkCard": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/PCIDevice": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/PowerSupply": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/Processor": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/SIMCard": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/Sensor": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/SoundCard": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Component/Systemboard": [
+    "GET"
+  ],
+  "/Assets/Phone/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Printer": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/Antivirus": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/Antivirus/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/Appliance": [
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/Appliance/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Assets/Printer/{asset_id}/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/Line": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/Line/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/PeripheralConnection": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/PeripheralConnection/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/Project": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/RemoteManagement": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/RemoteManagement/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/SoftwareInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/SoftwareInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/VirtualMachine": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/VirtualMachine/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{asset_id}/Volume": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Printer/{asset_id}/Volume/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Printer/{id}/Component/Battery": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/Camera": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/Case": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/Controller": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/Drive": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/Firmware": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/GenericDevice": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/GraphicCard": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/HardDrive": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/Memory": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/NetworkCard": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/PCIDevice": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/PowerSupply": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/Processor": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/SIMCard": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/Sensor": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/SoundCard": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Component/Systemboard": [
+    "GET"
+  ],
+  "/Assets/Printer/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Rack": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Rack/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Rack/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Rack/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Rack/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Rack/{rack_id}/Item": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Rack/{rack_id}/Item/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Socket": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Socket/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Software": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Software/{asset_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Software/{asset_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Software/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Software/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Software/{asset_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Software/{asset_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Software/{asset_id}/Project": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Software/{asset_id}/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Software/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Software/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Assets/Software/{software_id}/Version": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Software/{software_id}/Version/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/SoftwareLicense/{asset_id}/Volume/{id}": [
+    "GET"
+  ],
+  "/Assets/Unmanaged": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Unmanaged/{asset_id}/Antivirus": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Unmanaged/{asset_id}/Antivirus/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Unmanaged/{asset_id}/Appliance": [
+    "POST"
+  ],
+  "/Assets/Unmanaged/{asset_id}/Appliance/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Assets/Unmanaged/{asset_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Unmanaged/{asset_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Unmanaged/{asset_id}/PeripheralConnection": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Unmanaged/{asset_id}/PeripheralConnection/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Unmanaged/{asset_id}/RemoteManagement": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Unmanaged/{asset_id}/RemoteManagement/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Unmanaged/{asset_id}/SoftwareInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Unmanaged/{asset_id}/SoftwareInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Unmanaged/{asset_id}/VirtualMachine": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Unmanaged/{asset_id}/VirtualMachine/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Unmanaged/{asset_id}/Volume": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/Unmanaged/{asset_id}/Volume/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Unmanaged/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Battery": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Camera": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Case": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Controller": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Drive": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Firmware": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/GenericDevice": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/GraphicCard": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/HardDrive": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Memory": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/NetworkCard": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/PCIDevice": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/PowerSupply": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Processor": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/SIMCard": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Sensor": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/SoundCard": [
+    "GET"
+  ],
+  "/Assets/Unmanaged/{id}/Component/Systemboard": [
+    "GET"
+  ],
+  "/Assets/{asset_itemtype}/{asset_id}/OSInstallation": [
+    "GET",
+    "POST"
+  ],
+  "/Assets/{asset_itemtype}/{asset_id}/OSInstallation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Change": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Change/{assistance_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Change/{assistance_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Change/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Change/{id}/Cost": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Change/{id}/Cost/{cost_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Change/{id}/PendingReason": [
+    "GET"
+  ],
+  "/Assistance/Change/{id}/TeamMember": [
+    "DELETE",
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Change/{id}/TeamMember/{role}": [
+    "GET"
+  ],
+  "/Assistance/Change/{id}/Timeline": [
+    "GET"
+  ],
+  "/Assistance/Change/{id}/Timeline/Document": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Change/{id}/Timeline/Document/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Change/{id}/Timeline/Followup": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Change/{id}/Timeline/Followup/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Change/{id}/Timeline/Solution": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Change/{id}/Timeline/Solution/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Change/{id}/Timeline/Task": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Change/{id}/Timeline/Task/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Change/{id}/Timeline/Validation": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Change/{id}/Timeline/Validation/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/ExternalEvent": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/ExternalEvent/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/PendingReason": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/PendingReason/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/PlanningReminder": [
+    "GET"
+  ],
+  "/Assistance/PlanningReminder/{id}": [
+    "GET"
+  ],
+  "/Assistance/Problem": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Problem/{assistance_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Problem/{assistance_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Problem/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Problem/{id}/Cost": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Problem/{id}/Cost/{cost_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Problem/{id}/PendingReason": [
+    "GET"
+  ],
+  "/Assistance/Problem/{id}/TeamMember": [
+    "DELETE",
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Problem/{id}/TeamMember/{role}": [
+    "GET"
+  ],
+  "/Assistance/Problem/{id}/Timeline": [
+    "GET"
+  ],
+  "/Assistance/Problem/{id}/Timeline/Document": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Problem/{id}/Timeline/Document/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Problem/{id}/Timeline/Followup": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Problem/{id}/Timeline/Followup/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Problem/{id}/Timeline/Solution": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Problem/{id}/Timeline/Solution/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Problem/{id}/Timeline/Task": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Problem/{id}/Timeline/Task/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/RecurringChange": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/RecurringChange/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/RecurringTicket": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/RecurringTicket/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Stat": [
+    "GET"
+  ],
+  "/Assistance/Stat/Change/Asset": [
+    "GET"
+  ],
+  "/Assistance/Stat/Change/Asset/Export": [
+    "GET"
+  ],
+  "/Assistance/Stat/Change/AssetCharacteristics": [
+    "GET"
+  ],
+  "/Assistance/Stat/Change/AssetCharacteristics/Export": [
+    "GET"
+  ],
+  "/Assistance/Stat/Change/Characteristics": [
+    "GET"
+  ],
+  "/Assistance/Stat/Change/Characteristics/Export": [
+    "GET"
+  ],
+  "/Assistance/Stat/Change/Global": [
+    "GET"
+  ],
+  "/Assistance/Stat/Problem/Asset": [
+    "GET"
+  ],
+  "/Assistance/Stat/Problem/Asset/Export": [
+    "GET"
+  ],
+  "/Assistance/Stat/Problem/AssetCharacteristics": [
+    "GET"
+  ],
+  "/Assistance/Stat/Problem/AssetCharacteristics/Export": [
+    "GET"
+  ],
+  "/Assistance/Stat/Problem/Characteristics": [
+    "GET"
+  ],
+  "/Assistance/Stat/Problem/Characteristics/Export": [
+    "GET"
+  ],
+  "/Assistance/Stat/Problem/Global": [
+    "GET"
+  ],
+  "/Assistance/Stat/Ticket/Asset": [
+    "GET"
+  ],
+  "/Assistance/Stat/Ticket/Asset/Export": [
+    "GET"
+  ],
+  "/Assistance/Stat/Ticket/AssetCharacteristics": [
+    "GET"
+  ],
+  "/Assistance/Stat/Ticket/AssetCharacteristics/Export": [
+    "GET"
+  ],
+  "/Assistance/Stat/Ticket/Characteristics": [
+    "GET"
+  ],
+  "/Assistance/Stat/Ticket/Characteristics/Export": [
+    "GET"
+  ],
+  "/Assistance/Stat/Ticket/Global": [
+    "GET"
+  ],
+  "/Assistance/Ticket": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Ticket/{assistance_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Ticket/{assistance_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Ticket/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Ticket/{id}/Cost": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Ticket/{id}/Cost/{cost_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Ticket/{id}/PendingReason": [
+    "GET"
+  ],
+  "/Assistance/Ticket/{id}/TeamMember": [
+    "DELETE",
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Ticket/{id}/TeamMember/{role}": [
+    "GET"
+  ],
+  "/Assistance/Ticket/{id}/Timeline": [
+    "GET"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Document": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Document/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Followup": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Followup/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Solution": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Solution/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Task": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Task/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Validation": [
+    "GET",
+    "POST"
+  ],
+  "/Assistance/Ticket/{id}/Timeline/Validation/{subitem_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Budget/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Budget/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/CartridgeItem/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/CartridgeItem/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Certificate/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Certificate/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Change/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Change/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Cluster/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Cluster/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components": [
+    "GET"
+  ],
+  "/Components/Battery": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Battery/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Battery/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Battery/{id}/Items": [
+    "GET"
+  ],
+  "/Components/Camera": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Camera/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Camera/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Camera/{id}/Items": [
+    "GET"
+  ],
+  "/Components/Case": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Case/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Case/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Case/{id}/Items": [
+    "GET"
+  ],
+  "/Components/Controller": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Controller/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Controller/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Controller/{id}/Items": [
+    "GET"
+  ],
+  "/Components/Drive": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Drive/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Drive/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Drive/{id}/Items": [
+    "GET"
+  ],
+  "/Components/Firmware": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Firmware/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Firmware/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Firmware/{id}/Items": [
+    "GET"
+  ],
+  "/Components/GenericDevice": [
+    "GET",
+    "POST"
+  ],
+  "/Components/GenericDevice/Items/{id}": [
+    "GET"
+  ],
+  "/Components/GenericDevice/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/GenericDevice/{id}/Items": [
+    "GET"
+  ],
+  "/Components/GraphicCard": [
+    "GET",
+    "POST"
+  ],
+  "/Components/GraphicCard/Items/{id}": [
+    "GET"
+  ],
+  "/Components/GraphicCard/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/GraphicCard/{id}/Items": [
+    "GET"
+  ],
+  "/Components/HardDrive": [
+    "GET",
+    "POST"
+  ],
+  "/Components/HardDrive/Items/{id}": [
+    "GET"
+  ],
+  "/Components/HardDrive/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/HardDrive/{id}/Items": [
+    "GET"
+  ],
+  "/Components/Memory": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Memory/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Memory/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Memory/{id}/Items": [
+    "GET"
+  ],
+  "/Components/NetworkCard": [
+    "GET",
+    "POST"
+  ],
+  "/Components/NetworkCard/Items/{id}": [
+    "GET"
+  ],
+  "/Components/NetworkCard/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/NetworkCard/{id}/Items": [
+    "GET"
+  ],
+  "/Components/PCIDevice": [
+    "GET",
+    "POST"
+  ],
+  "/Components/PCIDevice/Items/{id}": [
+    "GET"
+  ],
+  "/Components/PCIDevice/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/PCIDevice/{id}/Items": [
+    "GET"
+  ],
+  "/Components/PowerSupply": [
+    "GET",
+    "POST"
+  ],
+  "/Components/PowerSupply/Items/{id}": [
+    "GET"
+  ],
+  "/Components/PowerSupply/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/PowerSupply/{id}/Items": [
+    "GET"
+  ],
+  "/Components/Processor": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Processor/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Processor/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Processor/{id}/Items": [
+    "GET"
+  ],
+  "/Components/SIMCard": [
+    "GET",
+    "POST"
+  ],
+  "/Components/SIMCard/Items/{id}": [
+    "GET"
+  ],
+  "/Components/SIMCard/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/SIMCard/{id}/Items": [
+    "GET"
+  ],
+  "/Components/Sensor": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Sensor/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Sensor/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Sensor/{id}/Items": [
+    "GET"
+  ],
+  "/Components/SoundCard": [
+    "GET",
+    "POST"
+  ],
+  "/Components/SoundCard/Items/{id}": [
+    "GET"
+  ],
+  "/Components/SoundCard/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/SoundCard/{id}/Items": [
+    "GET"
+  ],
+  "/Components/Systemboard": [
+    "GET",
+    "POST"
+  ],
+  "/Components/Systemboard/Items/{id}": [
+    "GET"
+  ],
+  "/Components/Systemboard/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Components/Systemboard/{id}/Items": [
+    "GET"
+  ],
+  "/Computer/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Computer/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/ConsumableItem/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/ConsumableItem/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Contact/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Contact/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/DCRoom/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/DCRoom/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Database/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Database/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/DatabaseInstance/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/DatabaseInstance/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Domain/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Domain/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/DomainRecord/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/DomainRecord/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/": [
+    "GET"
+  ],
+  "/Dropdowns/ApplianceEnvironment": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ApplianceEnvironment/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ApplianceType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ApplianceType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ApprovalStep": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ApprovalStep/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/AutoUpdateSystem": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/AutoUpdateSystem/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/BudgetType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/BudgetType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/BusinessCriticity": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/BusinessCriticity/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/CableStrand": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/CableStrand/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/CableType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/CableType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/Calendar": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/Calendar/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/CalendarCloseTime": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/CalendarCloseTime/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/CalendarTimeRange": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/CalendarTimeRange/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/CameraImageFormat": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/CameraImageFormat/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/CameraImageResolution": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/CameraImageResolution/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/CartridgeItemType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/CartridgeItemType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/CertificateType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/CertificateType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/CloseTime": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/CloseTime/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ClusterType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ClusterType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ComputerModel": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ComputerModel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ComputerType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ComputerType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ConsumableItemType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ConsumableItemType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ContactType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ContactType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ContractType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ContractType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/DatabaseInstanceCategory": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/DatabaseInstanceCategory/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/DatabaseInstanceType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/DatabaseInstanceType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/DeniedMailContent": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/DeniedMailContent/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/DenyList": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/DenyList/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/DocumentCategory": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/DocumentCategory/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/DocumentType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/DocumentType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/DomainRecordType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/DomainRecordType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/DomainRelation": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/DomainRelation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/DomainType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/DomainType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/EnclosureModel": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/EnclosureModel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/EventCategory": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/EventCategory/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/Filesystem": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/Filesystem/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/FollowupTemplate": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/FollowupTemplate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/HardDriveType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/HardDriveType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ITILCategory": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ITILCategory/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/LicenseType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/LicenseType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/LineType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/LineType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/Location": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/Location/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/Manufacturer": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/Manufacturer/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/MonitorModel": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/MonitorModel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/MonitorType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/MonitorType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/Network": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/Network/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/NetworkEquipmentModel": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/NetworkEquipmentModel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/NetworkEquipmentType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/NetworkEquipmentType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/NetworkPortFiberchannelType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/NetworkPortFiberchannelType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/NetworkPortType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/NetworkPortType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/PCIVendor": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/PCIVendor/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/PeripheralModel": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/PeripheralModel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/PeripheralType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/PeripheralType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/PhoneModel": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/PhoneModel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/PhonePowerSupply": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/PhonePowerSupply/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/PhoneType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/PhoneType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/PrinterModel": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/PrinterModel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/PrinterType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/PrinterType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ProjectTaskType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ProjectTaskType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ProjectType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ProjectType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/RequestType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/RequestType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/SolutionTemplate": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/SolutionTemplate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/SolutionType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/SolutionType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/State": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/State/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/Stencil": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/Stencil/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/SupplierType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/SupplierType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/TaskCategory": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/TaskCategory/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/TaskTemplate": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/TaskTemplate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/USBVendor": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/USBVendor/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/ValidationTemplate": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/ValidationTemplate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/VirtualMachineModel": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/VirtualMachineModel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/VirtualMachineState": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/VirtualMachineState/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/VirtualMachineType": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/VirtualMachineType/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Dropdowns/WifiNetwork": [
+    "GET",
+    "POST"
+  ],
+  "/Dropdowns/WifiNetwork/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Enclosure/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Enclosure/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Entity/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Entity/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/GraphQL/": [
+    "POST"
+  ],
+  "/GraphQL/Schema": [
+    "GET"
+  ],
+  "/Group/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Group/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Inventory/Agent": [
+    "GET"
+  ],
+  "/Inventory/Agent/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Inventory/Agent/{id}/InventoryFile": [
+    "GET"
+  ],
+  "/Inventory/Agent/{id}/InventoryRequest": [
+    "POST"
+  ],
+  "/Inventory/Agent/{id}/StatusRequest": [
+    "POST"
+  ],
+  "/Inventory/LockedField": [
+    "GET",
+    "POST"
+  ],
+  "/Inventory/LockedField/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Inventory/SNMPCredential": [
+    "GET",
+    "POST"
+  ],
+  "/Inventory/SNMPCredential/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Knowledgebase/Article": [
+    "GET",
+    "POST"
+  ],
+  "/Knowledgebase/Article/{article_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Knowledgebase/Article/{article_id}/Comment": [
+    "GET",
+    "POST"
+  ],
+  "/Knowledgebase/Article/{article_id}/Comment/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Knowledgebase/Article/{article_id}/Revision": [
+    "GET"
+  ],
+  "/Knowledgebase/Article/{article_id}/Revision/{revision}": [
+    "GET"
+  ],
+  "/Knowledgebase/Article/{article_id}/{language}/Revision": [
+    "GET"
+  ],
+  "/Knowledgebase/Article/{article_id}/{language}/Revision/{revision}": [
+    "GET"
+  ],
+  "/Line/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Line/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/": [
+    "GET"
+  ],
+  "/Management/Budget": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Budget/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Budget/{items_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Budget/{items_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Cluster": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Cluster/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Cluster/{items_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Cluster/{items_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Contact": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Contact/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Contract/{id}/Cost": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Contract/{id}/Cost/{cost_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/DataCenter": [
+    "GET",
+    "POST"
+  ],
+  "/Management/DataCenter/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Database": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Database/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Database/{items_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Database/{items_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/DatabaseInstance": [
+    "GET",
+    "POST"
+  ],
+  "/Management/DatabaseInstance/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/DatabaseInstance/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Management/DatabaseInstance/{items_id}/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Management/DatabaseInstance/{items_id}/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/DatabaseInstance/{items_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Management/DatabaseInstance/{items_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/DatabaseInstance/{items_id}/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Management/DatabaseInstance/{items_id}/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Document": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Document/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Document/{id}/Download": [
+    "GET"
+  ],
+  "/Management/Domain": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Domain/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Domain/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Management/Domain/{items_id}/Certificate": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Domain/{items_id}/Certificate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Domain/{items_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Domain/{items_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/DomainRecord": [
+    "GET",
+    "POST"
+  ],
+  "/Management/DomainRecord/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/License": [
+    "GET",
+    "POST"
+  ],
+  "/Management/License/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/License/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Management/Line": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Line/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Line/{id}/Infocom": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ],
+  "/Management/Line/{items_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Line/{items_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Management/Supplier": [
+    "GET",
+    "POST"
+  ],
+  "/Management/Supplier/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Monitor/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Monitor/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/NetworkEquipment/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/NetworkEquipment/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Notifications/Notification": [
+    "GET",
+    "POST"
+  ],
+  "/Notifications/Notification/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Notifications/Notification/{notification_id}/NotificationTemplate": [
+    "DELETE",
+    "GET"
+  ],
+  "/Notifications/Notification/{notification_id}/NotificationTemplate/{id}": [
+    "GET"
+  ],
+  "/Notifications/Notification/{notification_id}/Recipient": [
+    "GET",
+    "POST"
+  ],
+  "/Notifications/Notification/{notification_id}/Recipient/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Notifications/NotificationTemplate": [
+    "GET",
+    "POST"
+  ],
+  "/Notifications/NotificationTemplate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Notifications/NotificationTemplate/{template_id}/Translation": [
+    "GET",
+    "POST"
+  ],
+  "/Notifications/NotificationTemplate/{template_id}/Translation/Default": [
+    "GET"
+  ],
+  "/Notifications/NotificationTemplate/{template_id}/Translation/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Notifications/NotificationTemplate/{template_id}/Translation/{language}": [
+    "GET"
+  ],
+  "/Notifications/QueuedNotification": [
+    "GET"
+  ],
+  "/Notifications/QueuedNotification/{id}": [
+    "GET"
+  ],
+  "/Notifications/QueuedNotification/{id}/SendRequest": [
+    "POST"
+  ],
+  "/Peripheral/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Peripheral/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Phone/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Phone/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Printer/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Printer/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Problem/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Problem/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Project/": [
+    "GET",
+    "POST"
+  ],
+  "/Project/Project/{id}/Cost": [
+    "GET",
+    "POST"
+  ],
+  "/Project/Project/{id}/Cost/{cost_id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Project/Project/{items_id}/Contract": [
+    "GET",
+    "POST"
+  ],
+  "/Project/Project/{items_id}/Contract/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Project/Project/{items_id}/KBArticle": [
+    "GET",
+    "POST"
+  ],
+  "/Project/Project/{items_id}/KBArticle/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Project/Task": [
+    "GET",
+    "POST"
+  ],
+  "/Project/Task/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Project/Task/{task_id}/TeamMember": [
+    "GET",
+    "POST"
+  ],
+  "/Project/Task/{task_id}/TeamMember/{teammember_id}": [
+    "DELETE"
+  ],
+  "/Project/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Project/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Project/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Project/{project_id}/Change": [
+    "GET",
+    "POST"
+  ],
+  "/Project/{project_id}/Change/{change_id}": [
+    "DELETE"
+  ],
+  "/Project/{project_id}/Problem": [
+    "GET",
+    "POST"
+  ],
+  "/Project/{project_id}/Problem/{problem_id}": [
+    "DELETE"
+  ],
+  "/Project/{project_id}/Task": [
+    "GET",
+    "POST"
+  ],
+  "/Project/{project_id}/TeamMember": [
+    "GET",
+    "POST"
+  ],
+  "/Project/{project_id}/TeamMember/{teammember_id}": [
+    "DELETE"
+  ],
+  "/Project/{project_id}/Ticket": [
+    "GET",
+    "POST"
+  ],
+  "/Project/{project_id}/Ticket/{ticket_id}": [
+    "DELETE"
+  ],
+  "/ProjectTask/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/ProjectTask/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rack/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Rack/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection": [
+    "GET"
+  ],
+  "/Rule/Collection/Asset/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/Asset/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/Asset/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/Asset/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Asset/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/Asset/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Asset/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/Asset/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Asset/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/Asset/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Asset/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/Asset/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Change/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/Change/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/Change/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/Change/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Change/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/Change/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Change/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/Change/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Change/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/Change/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Change/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/Change/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/DefineItemtype/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/DefineItemtype/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/DefineItemtype/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/DefineItemtype/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/DefineItemtype/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/DefineItemtype/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/DefineItemtype/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/DefineItemtype/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/DefineItemtype/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/DefineItemtype/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/DefineItemtype/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/DefineItemtype/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/ImportAsset/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportAsset/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportAsset/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportAsset/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportAsset/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/ImportAsset/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/ImportAsset/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportAsset/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportAsset/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/ImportAsset/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/ImportAsset/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/ImportAsset/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/ImportEntity/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportEntity/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportEntity/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportEntity/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportEntity/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/ImportEntity/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/ImportEntity/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportEntity/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/ImportEntity/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/ImportEntity/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/ImportEntity/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/ImportEntity/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Location/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/Location/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/Location/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/Location/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Location/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/Location/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Location/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/Location/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Location/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/Location/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Location/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/Location/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/MailCollector/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/MailCollector/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/MailCollector/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/MailCollector/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/MailCollector/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/MailCollector/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/MailCollector/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/MailCollector/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/MailCollector/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/MailCollector/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/MailCollector/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/MailCollector/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Problem/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/Problem/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/Problem/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/Problem/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Problem/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/Problem/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Problem/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/Problem/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Problem/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/Problem/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Problem/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/Problem/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Right/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/Right/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/Right/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/Right/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Right/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/Right/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Right/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/Right/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Right/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/Right/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Right/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/Right/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/SoftwareCategory/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/SoftwareCategory/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/SoftwareCategory/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/SoftwareCategory/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/SoftwareCategory/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/SoftwareCategory/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/SoftwareCategory/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/SoftwareCategory/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/SoftwareCategory/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/SoftwareCategory/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/SoftwareCategory/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/SoftwareCategory/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Ticket/ActionField": [
+    "GET"
+  ],
+  "/Rule/Collection/Ticket/ActionType": [
+    "GET"
+  ],
+  "/Rule/Collection/Ticket/CriteriaCondition": [
+    "GET"
+  ],
+  "/Rule/Collection/Ticket/CriteriaCriteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Ticket/Rule": [
+    "GET",
+    "POST"
+  ],
+  "/Rule/Collection/Ticket/Rule/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Ticket/Rule/{id}/Action": [
+    "GET"
+  ],
+  "/Rule/Collection/Ticket/Rule/{id}/Criteria": [
+    "GET"
+  ],
+  "/Rule/Collection/Ticket/Rule/{rule_id}/Action": [
+    "POST"
+  ],
+  "/Rule/Collection/Ticket/Rule/{rule_id}/Action/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Rule/Collection/Ticket/Rule/{rule_id}/Criteria": [
+    "POST"
+  ],
+  "/Rule/Collection/Ticket/Rule/{rule_id}/Criteria/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Security/LoginSession/All": [
+    "GET"
+  ],
+  "/Security/LoginSession/My": [
+    "GET"
+  ],
+  "/Security/LoginSession/{login_session_uid}": [
+    "DELETE"
+  ],
+  "/Security/LoginSession/{users_id}": [
+    "GET"
+  ],
+  "/Session/EntityTree": [
+    "GET"
+  ],
+  "/Setup/": [
+    "GET"
+  ],
+  "/Setup/AutomaticAction/{id}": [
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/AutomaticAction/{id}/Log": [
+    "GET"
+  ],
+  "/Setup/Config": [
+    "GET"
+  ],
+  "/Setup/Config/{context}": [
+    "GET"
+  ],
+  "/Setup/Config/{context}/{name}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/EmailAuthServer": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/EmailAuthServer/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/EmailCollector": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/EmailCollector/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/ExternalLink": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/ExternalLink/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/FieldUnicity": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/FieldUnicity/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/LDAPDirectory": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/LDAPDirectory/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/LDAPDirectoryReplicate": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/LDAPDirectoryReplicate/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/ManualLink": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/ManualLink/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/NotImportedEmail": [
+    "GET"
+  ],
+  "/Setup/NotImportedEmail/{id}": [
+    "DELETE",
+    "GET"
+  ],
+  "/Setup/OAuthClient": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/OAuthClient/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/OLA": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/OLA/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/OLALevel": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/OLALevel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/Plugin": [
+    "GET"
+  ],
+  "/Setup/Plugin/{id}/Clean": [
+    "POST"
+  ],
+  "/Setup/Plugin/{id}/Disable": [
+    "POST"
+  ],
+  "/Setup/Plugin/{id}/Enable": [
+    "POST"
+  ],
+  "/Setup/Plugin/{id}/Install": [
+    "POST"
+  ],
+  "/Setup/Plugin/{id}/Uninstall": [
+    "POST"
+  ],
+  "/Setup/QueuedWebhook": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/QueuedWebhook/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/SLA": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/SLA/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/SLALevel": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/SLALevel/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/SLM": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/SLM/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/Webhook": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/Webhook/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Setup/WebhookCategory": [
+    "GET",
+    "POST"
+  ],
+  "/Setup/WebhookCategory/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Software/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Software/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/SoftwareLicense/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/SoftwareLicense/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Supplier/{items_id}/Note": [
+    "GET",
+    "POST"
+  ],
+  "/Supplier/{items_id}/Note/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Tools/": [
+    "GET"
+  ],
+  "/Tools/RSSFeed": [
+    "GET",
+    "POST"
+  ],
+  "/Tools/RSSFeed/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Tools/Reminder": [
+    "GET",
+    "POST"
+  ],
+  "/Tools/Reminder/{id}": [
+    "DELETE",
+    "GET",
+    "PATCH"
+  ],
+  "/Transfer": [
+    "POST"
+  ],
+  "/authorize": [
+    "GET",
+    "POST"
+  ],
+  "/doc": [
+    "GET"
+  ],
+  "/doc.json": [
+    "GET"
+  ],
+  "/getting-started": [
+    "GET"
+  ],
+  "/locales": [
+    "GET"
+  ],
+  "/session": [
+    "GET"
+  ],
+  "/status": [
+    "GET"
+  ],
+  "/status/all": [
+    "GET"
+  ],
+  "/status/{service}": [
+    "GET"
+  ],
+  "/swagger-oauth-redirect": [
+    "GET"
+  ],
+  "/token": [
+    "POST"
+  ],
+  "/{req}": [
+    "DELETE",
+    "GET",
+    "PATCH",
+    "POST"
+  ]
+}

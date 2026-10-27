@@ -54,7 +54,7 @@ test('maps v3 PATCH bodies without a legacy input wrapper and handles empty resp
 
 test('does not expose OAuth credentials in token errors and reports API permissions', async () => {
   global.fetch = jest.fn().mockResolvedValueOnce(json({ error_description: 'secret leaked' }, 401));
-  await expect(new GlpiClient(config).request('GET', '/session')).rejects.toThrow('OAuth password grant failed');
+  await expect(new GlpiClient(config).request('GET', '/session')).rejects.toThrow('OAuth api scope grant failed');
   const fetcher = jest.fn()
     .mockResolvedValueOnce(json({ access_token: 'access', expires_in: 3600 }))
     .mockResolvedValueOnce(json({ title: 'Forbidden' }, 403));
@@ -70,4 +70,32 @@ test('catalog uses v3 paths and schema properties', () => {
   expect(toolCatalog.find((tool) => tool.name === 'glpi_assign_ticket')?.path).toContain('/TeamMember');
   expect(toolCatalog.some((tool) => tool.name.includes('plugin_tag'))).toBe(false);
   expect(toolCatalog.every((tool) => !tool.path.includes('apirest.php'))).toBe(true);
+});
+
+test('uses user scope for current-user routes without changing ordinary API tokens', async () => {
+  const fetcher = jest.fn()
+    .mockResolvedValueOnce(json({ access_token: 'user-token', expires_in: 3600 }))
+    .mockResolvedValueOnce(json({ id: 7 }))
+    .mockResolvedValueOnce(json({ access_token: 'api-token', expires_in: 3600 }))
+    .mockResolvedValueOnce(json({ items: [] }));
+  global.fetch = fetcher;
+  const client = new GlpiClient(config);
+  await client.request('GET', '/Administration/User/Me');
+  await client.request('GET', '/Administration/User');
+  expect(fetcher.mock.calls[0][1].body).toContain('scope=user');
+  expect(fetcher.mock.calls[1][1].headers.Authorization).toBe('Bearer user-token');
+  expect(fetcher.mock.calls[2][1].body).toContain('scope=api');
+  expect(fetcher.mock.calls[3][1].headers.Authorization).toBe('Bearer api-token');
+});
+
+test('inventory request sends a scoped POST with no body', async () => {
+  const fetcher = jest.fn()
+    .mockResolvedValueOnce(json({ access_token: 'access', expires_in: 3600 }))
+    .mockResolvedValueOnce(json({ accepted: true }));
+  global.fetch = fetcher;
+  const result = await new GlpiClient(config).request('POST', '/Inventory/Agent/8/InventoryRequest');
+  expect(result).toEqual({ accepted: true });
+  expect(String(fetcher.mock.calls[1][0])).toContain('/api.php/v3/Inventory/Agent/8/InventoryRequest');
+  expect(fetcher.mock.calls[1][1].method).toBe('POST');
+  expect(fetcher.mock.calls[1][1].body).toBeUndefined();
 });

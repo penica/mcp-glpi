@@ -1,6 +1,6 @@
 {
   "name": "@davycaetano/mcp-glpi",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Full-featured MCP Server for GLPI - Complete IT Service Management integration with Claude (Tickets, Problems, Changes, Assets, Knowledge Base, Contracts, Projects)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -54,7 +54,7 @@
     "node": ">=18.18.0"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0"
+    "@modelcontextprotocol/sdk": "^1.32.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",

@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
-import { CallToolRequestSchema, ListToolsRequestSchema, ErrorCode, McpError } from '@modelcontextprotocol/sdk/types.js';
+import { CallToolRequestSchema, ListToolsRequestSchema, ListResourceTemplatesRequestSchema, ReadResourceRequestSchema, ErrorCode, McpError } from '@modelcontextprotocol/sdk/types.js';
 import { GlpiClient, GlpiConfig } from './glpi-client.js';
-import { toolCatalog, searchable } from './tool-catalog.js';
+import { toolCatalog } from './tool-catalog.js';
+import { expansionCatalog } from './tool-expansion.js';
+import { resolveToolPath, queryFromArgs, sanitizeToolResult } from './tool-router.js';
 
 function configFromEnvironment(): GlpiConfig {
   const names = ['GLPI_URL', 'GLPI_OAUTH_CLIENT_ID', 'GLPI_OAUTH_CLIENT_SECRET', 'GLPI_USERNAME', 'GLPI_PASSWORD'] as const;
@@ -14,38 +16,24 @@ function configFromEnvironment(): GlpiConfig {
   };
 }
 
-const server = new Server({ name: 'mcp-glpi', version: '3.0.0' }, { capabilities: { tools: {} } });
+const server = new Server({ name: 'mcp-glpi', version: '3.1.0' }, { capabilities: { tools: {}, resources: {} } });
+const allTools = [...toolCatalog, ...expansionCatalog];
 const client = new GlpiClient(configFromEnvironment());
 server.setRequestHandler(ListToolsRequestSchema, async () => ({
-  tools: toolCatalog.map(({ name, description, inputSchema }) => ({ name, description, inputSchema })),
+  tools: allTools.map(({ name, description, inputSchema }) => ({ name, description, inputSchema })),
 }));
 server.setRequestHandler(CallToolRequestSchema, async ({ params }) => {
-  const tool = toolCatalog.find((candidate) => candidate.name === params.name);
+  const tool = allTools.find((candidate) => candidate.name === params.name);
   if (!tool) throw new McpError(ErrorCode.MethodNotFound, `Unknown tool: ${params.name}`);
   const args = (params.arguments ?? {}) as Record<string, unknown>;
   for (const required of tool.inputSchema.required as string[]) {
     if (args[required] === undefined) throw new McpError(ErrorCode.InvalidParams, `${required} is required`);
   }
-  let path = tool.path;
-  if (path === '{search_path}') {
-    const key = String(args.itemtype) as keyof typeof searchable;
-    if (!Object.hasOwn(searchable, key)) throw new McpError(ErrorCode.InvalidParams, 'Unsupported itemtype');
-    path = searchable[key];
-  }
-  path = path.replace(/\{(\w+)\}/g, (_, name: string) => {
-    const value = Number(args[name] ?? (name === 'article_id' ? args.id : undefined));
-    if (!Number.isSafeInteger(value) || value < (tool.name === 'glpi_get_entity' ? 0 : 1)) throw new McpError(ErrorCode.InvalidParams, `${name} must be a valid ID`);
-    return String(value);
-  });
-  const query: Record<string, string | number | boolean | undefined> = {};
-  for (const key of ['filter', 'sort', 'start', 'limit', 'language', 'force']) {
-    if (args[key] !== undefined) query[key] = args[key] as string | number | boolean;
-  }
-  if (query.limit !== undefined && (!Number.isInteger(query.limit) || Number(query.limit) < 1 || Number(query.limit) > 100)) {
-    throw new McpError(ErrorCode.InvalidParams, 'limit must be an integer between 1 and 100');
-  }
-  if (query.start !== undefined && (!Number.isInteger(query.start) || Number(query.start) < 0)) {
-    throw new McpError(ErrorCode.InvalidParams, 'start must be a nonnegative integer');
+  const path = resolveToolPath(tool, args);
+  const query = queryFromArgs(args);
+  if (tool.name === 'glpi_download_document') {
+    const uri = `glpi://document/${args.id}/content`;
+    return { content: [{ type: 'resource_link', uri, name: `GLPI document ${args.id}`, mimeType: 'application/octet-stream' }] };
   }
   try {
     const result = await client.request(tool.method, path, {
@@ -54,10 +42,21 @@ server.setRequestHandler(CallToolRequestSchema, async ({ params }) => {
       profileId: args.profile_id as number | undefined,
       entityRecursive: args.entity_recursive as boolean | undefined,
     });
-    return { content: [{ type: 'text', text: JSON.stringify(result) }] };
+    return { content: [{ type: 'text', text: JSON.stringify(sanitizeToolResult(tool.name, result)) }] };
   } catch (error) {
     return { isError: true, content: [{ type: 'text', text: error instanceof Error ? error.message : String(error) }] };
   }
+});
+
+
+server.setRequestHandler(ListResourceTemplatesRequestSchema, async () => ({
+  resourceTemplates: [{ name: 'GLPI document content', uriTemplate: 'glpi://document/{id}/content', description: 'Authenticated document download (maximum 10 MiB)' }],
+}));
+server.setRequestHandler(ReadResourceRequestSchema, async ({ params }) => {
+  const match = /^glpi:\/\/document\/([1-9]\d*)\/content$/.exec(params.uri);
+  if (!match) throw new McpError(ErrorCode.InvalidRequest, 'Unknown GLPI resource URI');
+  const document = await client.requestBinary(`/Management/Document/${match[1]}/Download`);
+  return { contents: [{ uri: params.uri, mimeType: document.mimeType, blob: document.data.toString('base64') }] };
 });
 
 async function main() {

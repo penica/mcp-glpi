@@ -1,0 +1,3004 @@
+{
+  "Ticket": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "content": {
+        "type": "string"
+      },
+      "user_recipient": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_editor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "urgency": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "impact": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "priority": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "resolution_date": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string"
+      },
+      "date_solve": {
+        "type": "string"
+      },
+      "date_close": {
+        "type": "string"
+      },
+      "type": {
+        "type": "integer",
+        "enum": [
+          1,
+          2
+        ]
+      },
+      "external_id": {
+        "type": "string"
+      },
+      "request_type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "take_into_account_date": {
+        "type": "string"
+      },
+      "sla_ttr": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "sla_tto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "sla_level_ttr": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "global_validation": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "status": {
+        "type": "object"
+      },
+      "entity": {
+        "type": "object",
+        "properties": {
+          "completename": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "team": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "_type": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string",
+              "enum": [
+                "requester",
+                "assigned",
+                "observer",
+                null
+              ]
+            },
+            "user": {
+              "type": "object"
+            },
+            "group": {
+              "type": "object"
+            },
+            "supplier": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "costs": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "additionalProperties": false
+  },
+  "Problem": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "content": {
+        "type": "string"
+      },
+      "user_recipient": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_editor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "urgency": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "impact": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "priority": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "resolution_date": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string"
+      },
+      "date_solve": {
+        "type": "string"
+      },
+      "date_close": {
+        "type": "string"
+      },
+      "status": {
+        "type": "object"
+      },
+      "entity": {
+        "type": "object",
+        "properties": {
+          "completename": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "team": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "_type": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string",
+              "enum": [
+                "requester",
+                "assigned",
+                "observer",
+                null
+              ]
+            },
+            "user": {
+              "type": "object"
+            },
+            "group": {
+              "type": "object"
+            },
+            "supplier": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "costs": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "additionalProperties": false
+  },
+  "Change": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "content": {
+        "type": "string"
+      },
+      "user_recipient": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_editor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "urgency": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "impact": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "priority": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "resolution_date": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string"
+      },
+      "date_solve": {
+        "type": "string"
+      },
+      "date_close": {
+        "type": "string"
+      },
+      "global_validation": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "status": {
+        "type": "object"
+      },
+      "entity": {
+        "type": "object",
+        "properties": {
+          "completename": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "team": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "_type": {
+              "type": "string"
+            },
+            "role": {
+              "type": "string",
+              "enum": [
+                "requester",
+                "assigned",
+                "observer",
+                null
+              ]
+            },
+            "user": {
+              "type": "object"
+            },
+            "group": {
+              "type": "object"
+            },
+            "supplier": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "costs": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "additionalProperties": false
+  },
+  "Followup": {
+    "type": "object",
+    "properties": {
+      "itemtype": {
+        "type": "string"
+      },
+      "items_id": {
+        "type": "integer"
+      },
+      "content": {
+        "type": "string"
+      },
+      "is_private": {
+        "type": "boolean"
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_editor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "request_type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "date": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "timeline_position": {
+        "type": "number",
+        "enum": [
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "source_item_id": {
+        "type": "integer"
+      },
+      "source_of_item_id": {
+        "type": "integer"
+      }
+    },
+    "additionalProperties": false
+  },
+  "TicketTask": {
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": "string"
+      },
+      "is_private": {
+        "type": "boolean"
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_editor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "date": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "duration": {
+        "type": "integer"
+      },
+      "planned_begin": {
+        "type": "string"
+      },
+      "planned_end": {
+        "type": "string"
+      },
+      "state": {
+        "type": "integer",
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "timeline_position": {
+        "type": "number",
+        "enum": [
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "tickets_id": {
+        "type": "integer"
+      },
+      "source_item_id": {
+        "type": "integer"
+      },
+      "source_of_item_id": {
+        "type": "integer"
+      }
+    },
+    "additionalProperties": false
+  },
+  "ProblemTask": {
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": "string"
+      },
+      "is_private": {
+        "type": "boolean"
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_editor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "date": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "duration": {
+        "type": "integer"
+      },
+      "planned_begin": {
+        "type": "string"
+      },
+      "planned_end": {
+        "type": "string"
+      },
+      "state": {
+        "type": "integer",
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "timeline_position": {
+        "type": "number",
+        "enum": [
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "problems_id": {
+        "type": "integer"
+      }
+    },
+    "additionalProperties": false
+  },
+  "ChangeTask": {
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": "string"
+      },
+      "is_private": {
+        "type": "boolean"
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_editor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "date": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "duration": {
+        "type": "integer"
+      },
+      "planned_begin": {
+        "type": "string"
+      },
+      "planned_end": {
+        "type": "string"
+      },
+      "state": {
+        "type": "integer",
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "timeline_position": {
+        "type": "number",
+        "enum": [
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "changes_id": {
+        "type": "integer"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Solution": {
+    "type": "object",
+    "properties": {
+      "itemtype": {
+        "type": "string"
+      },
+      "items_id": {
+        "type": "integer"
+      },
+      "type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "content": {
+        "type": "string"
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_editor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "approver": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "status": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "approval_followup": {
+        "type": "object"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "date_approval": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Computer": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "entity": {
+        "type": "object",
+        "properties": {
+          "completename": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "manufacturer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "contact": {
+        "type": "string"
+      },
+      "contact_num": {
+        "type": "string"
+      },
+      "serial": {
+        "type": "string"
+      },
+      "otherserial": {
+        "type": "string"
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "model": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "group_tech": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "network": {
+        "type": "object"
+      },
+      "autoupdatesystem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_template": {
+        "type": "boolean"
+      },
+      "template_name": {
+        "type": "string"
+      },
+      "is_dynamic": {
+        "type": "boolean"
+      },
+      "ticket_tco": {
+        "type": "number"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Software": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "entity": {
+        "type": "object"
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "manufacturer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "parent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_helpdesk_visible": {
+        "type": "boolean"
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "user_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group_tech": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "is_update": {
+        "type": "boolean"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "is_template": {
+        "type": "boolean"
+      },
+      "template_name": {
+        "type": "string"
+      },
+      "ticket_tco": {
+        "type": "number"
+      }
+    },
+    "additionalProperties": false
+  },
+  "NetworkEquipment": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "entity": {
+        "type": "object",
+        "properties": {
+          "completename": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "manufacturer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "contact": {
+        "type": "string"
+      },
+      "contact_num": {
+        "type": "string"
+      },
+      "serial": {
+        "type": "string"
+      },
+      "otherserial": {
+        "type": "string"
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "model": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "group_tech": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "network": {
+        "type": "object"
+      },
+      "autoupdatesystem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ram": {
+        "type": "integer"
+      },
+      "is_template": {
+        "type": "boolean"
+      },
+      "template_name": {
+        "type": "string"
+      },
+      "ticket_tco": {
+        "type": "number"
+      },
+      "is_dynamic": {
+        "type": "boolean"
+      },
+      "sysdescr": {
+        "type": "string"
+      },
+      "cpu": {
+        "type": "integer"
+      },
+      "snmp_credential": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  },
+  "Printer": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "entity": {
+        "type": "object",
+        "properties": {
+          "completename": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "manufacturer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "contact": {
+        "type": "string"
+      },
+      "contact_num": {
+        "type": "string"
+      },
+      "serial": {
+        "type": "string"
+      },
+      "otherserial": {
+        "type": "string"
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "model": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "group_tech": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "network": {
+        "type": "object"
+      },
+      "autoupdatesystem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "has_serial": {
+        "type": "boolean"
+      },
+      "has_parallel": {
+        "type": "boolean"
+      },
+      "has_usb": {
+        "type": "boolean"
+      },
+      "has_wifi": {
+        "type": "boolean"
+      },
+      "has_ethernet": {
+        "type": "boolean"
+      },
+      "is_global": {
+        "type": "boolean"
+      },
+      "is_template": {
+        "type": "boolean"
+      },
+      "template_name": {
+        "type": "string"
+      },
+      "ticket_tco": {
+        "type": "number"
+      },
+      "is_dynamic": {
+        "type": "boolean"
+      },
+      "sysdescr": {
+        "type": "string"
+      },
+      "snmp_credential": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  },
+  "Monitor": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "entity": {
+        "type": "object",
+        "properties": {
+          "completename": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "manufacturer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "contact": {
+        "type": "string"
+      },
+      "contact_num": {
+        "type": "string"
+      },
+      "serial": {
+        "type": "string"
+      },
+      "otherserial": {
+        "type": "string"
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "model": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "group_tech": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "autoupdatesystem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "size": {
+        "type": "number"
+      },
+      "has_microphone": {
+        "type": "boolean"
+      },
+      "has_speaker": {
+        "type": "boolean"
+      },
+      "has_subd": {
+        "type": "boolean"
+      },
+      "has_bnc": {
+        "type": "boolean"
+      },
+      "has_dvi": {
+        "type": "boolean"
+      },
+      "has_pivot": {
+        "type": "boolean"
+      },
+      "has_hdmi": {
+        "type": "boolean"
+      },
+      "has_displayport": {
+        "type": "boolean"
+      },
+      "is_global": {
+        "type": "boolean"
+      },
+      "is_template": {
+        "type": "boolean"
+      },
+      "template_name": {
+        "type": "string"
+      },
+      "ticket_tco": {
+        "type": "number"
+      },
+      "is_dynamic": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Phone": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "entity": {
+        "type": "object",
+        "properties": {
+          "completename": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "manufacturer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user_tech": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "contact": {
+        "type": "string"
+      },
+      "contact_num": {
+        "type": "string"
+      },
+      "serial": {
+        "type": "string"
+      },
+      "otherserial": {
+        "type": "string"
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "model": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "group_tech": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "autoupdatesystem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "brand": {
+        "type": "string"
+      },
+      "power_supply": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "number_line": {
+        "type": "string"
+      },
+      "have_headset": {
+        "type": "boolean"
+      },
+      "have_hp": {
+        "type": "boolean"
+      },
+      "is_global": {
+        "type": "boolean"
+      },
+      "is_template": {
+        "type": "boolean"
+      },
+      "template_name": {
+        "type": "string"
+      },
+      "ticket_tco": {
+        "type": "number"
+      },
+      "is_dynamic": {
+        "type": "boolean"
+      },
+      "last_inventory_update": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  },
+  "KBArticle": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "content": {
+        "type": "string"
+      },
+      "parents": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "is_faq": {
+        "type": "boolean"
+      },
+      "entity": {
+        "type": "object"
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "views": {
+        "type": "integer"
+      },
+      "show_in_service_catalog": {
+        "type": "boolean"
+      },
+      "description": {
+        "type": "string"
+      },
+      "illustration": {
+        "type": "string"
+      },
+      "is_pinned": {
+        "type": "boolean"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "date_begin": {
+        "type": "string"
+      },
+      "date_end": {
+        "type": "string"
+      },
+      "revisions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "revision": {
+              "type": "integer"
+            },
+            "language": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "translations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "is_favorite": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Contract": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "entity": {
+        "type": "object"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "costs": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "number": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "date_begin": {
+        "type": "string"
+      },
+      "duration": {
+        "type": "integer"
+      },
+      "notice_period": {
+        "type": "integer"
+      },
+      "renewal_period": {
+        "type": "integer"
+      },
+      "invoice_period": {
+        "type": "integer"
+      },
+      "accounting_number": {
+        "type": "string"
+      },
+      "week_begin_hour": {
+        "type": "string"
+      },
+      "week_end_hour": {
+        "type": "string"
+      },
+      "saturday_begin_hour": {
+        "type": "string"
+      },
+      "saturday_end_hour": {
+        "type": "string"
+      },
+      "sunday_begin_hour": {
+        "type": "string"
+      },
+      "sunday_end_hour": {
+        "type": "string"
+      },
+      "use_saturday": {
+        "type": "boolean"
+      },
+      "use_sunday": {
+        "type": "boolean"
+      },
+      "max_links_allowed": {
+        "type": "integer"
+      },
+      "alert": {
+        "type": "integer",
+        "enum": [
+          0,
+          4,
+          8,
+          12,
+          64,
+          72
+        ]
+      },
+      "renewal_type": {
+        "type": "integer",
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
+      "template_name": {
+        "type": "string"
+      },
+      "is_template": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Supplier": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "entity": {
+        "type": "object"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_deleted": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Location": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "code": {
+        "type": "string"
+      },
+      "alias": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "entity": {
+        "type": "object"
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "parent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "room": {
+        "type": "string"
+      },
+      "building": {
+        "type": "string"
+      },
+      "address": {
+        "type": "string"
+      },
+      "town": {
+        "type": "string"
+      },
+      "postcode": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      },
+      "latitude": {
+        "type": "string"
+      },
+      "longitude": {
+        "type": "string"
+      },
+      "altitude": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Project": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "content": {
+        "type": "string"
+      },
+      "code": {
+        "type": "string"
+      },
+      "priority": {
+        "type": "integer",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "entity": {
+        "type": "object"
+      },
+      "tasks": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "comment": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "costs": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "status": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "parent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "type": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "date": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "plan_start_date": {
+        "type": "string"
+      },
+      "plan_end_date": {
+        "type": "string"
+      },
+      "real_start_date": {
+        "type": "string"
+      },
+      "real_end_date": {
+        "type": "string"
+      },
+      "percent_done": {
+        "type": "integer"
+      },
+      "auto_percent_done": {
+        "type": "boolean"
+      },
+      "show_on_global_gantt": {
+        "type": "boolean"
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "template_name": {
+        "type": "string"
+      },
+      "is_template": {
+        "type": "boolean"
+      },
+      "tickets": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "changes": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "problems": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "team": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      }
+    },
+    "additionalProperties": false
+  },
+  "User": {
+    "type": "object",
+    "properties": {
+      "username": {
+        "type": "string"
+      },
+      "realname": {
+        "type": "string"
+      },
+      "firstname": {
+        "type": "string"
+      },
+      "middlename": {
+        "type": "string"
+      },
+      "phone": {
+        "type": "string"
+      },
+      "phone2": {
+        "type": "string"
+      },
+      "mobile": {
+        "type": "string"
+      },
+      "emails": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "email": {
+              "type": "string"
+            },
+            "is_default": {
+              "type": "boolean"
+            },
+            "is_dynamic": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "comment": {
+        "type": "string"
+      },
+      "is_active": {
+        "type": "boolean"
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "password": {
+        "type": "string"
+      },
+      "password2": {
+        "type": "string"
+      },
+      "location": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "authtype": {
+        "type": "number",
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "last_login": {
+        "type": "string"
+      },
+      "default_profile": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "default_entity": {
+        "type": "object"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "title": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "registration_number": {
+        "type": "string"
+      },
+      "begin_date": {
+        "type": "string"
+      },
+      "end_date": {
+        "type": "string"
+      },
+      "nickname": {
+        "type": "string"
+      },
+      "substitution_start_date": {
+        "type": "string"
+      },
+      "substitution_end_date": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Group": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "parent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "entity": {
+        "type": "object"
+      },
+      "code": {
+        "type": "string"
+      },
+      "ldap_field": {
+        "type": "string"
+      },
+      "ldap_value": {
+        "type": "string"
+      },
+      "ldap_group_dn": {
+        "type": "string"
+      },
+      "maybe_requester": {
+        "type": "boolean"
+      },
+      "maybe_observer": {
+        "type": "boolean"
+      },
+      "maybe_assigned": {
+        "type": "boolean"
+      },
+      "maybe_assigned_task": {
+        "type": "boolean"
+      },
+      "maybe_notified": {
+        "type": "boolean"
+      },
+      "may_contain_items": {
+        "type": "boolean"
+      },
+      "may_contain_users": {
+        "type": "boolean"
+      },
+      "maybe_manager": {
+        "type": "boolean"
+      },
+      "recursive_membership": {
+        "type": "boolean"
+      },
+      "mfa_enforced": {
+        "type": "boolean"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  },
+  "ITILCategory": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "entity": {
+        "type": "object"
+      },
+      "is_recursive": {
+        "type": "boolean"
+      },
+      "parent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "group": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "code": {
+        "type": "string"
+      },
+      "is_helpdesk_visible": {
+        "type": "boolean"
+      },
+      "ticket_incident_template": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ticket_request_template": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "change_template": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "problem_template": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "is_incident_visible": {
+        "type": "boolean"
+      },
+      "is_request_visible": {
+        "type": "boolean"
+      },
+      "is_change_visible": {
+        "type": "boolean"
+      },
+      "is_problem_visible": {
+        "type": "boolean"
+      },
+      "knowbase_article": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Entity": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "parent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "registration_number": {
+        "type": "string"
+      },
+      "address": {
+        "type": "string"
+      },
+      "postcode": {
+        "type": "string"
+      },
+      "city": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      },
+      "latitude": {
+        "type": "string"
+      },
+      "longitude": {
+        "type": "string"
+      },
+      "altitude": {
+        "type": "string"
+      },
+      "website": {
+        "type": "string"
+      },
+      "phone": {
+        "type": "string"
+      },
+      "fax": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "admin_email": {
+        "type": "string"
+      },
+      "admin_email_name": {
+        "type": "string"
+      },
+      "from_email": {
+        "type": "string"
+      },
+      "from_email_name": {
+        "type": "string"
+      },
+      "noreply_email": {
+        "type": "string"
+      },
+      "noreply_email_name": {
+        "type": "string"
+      },
+      "replyto_email": {
+        "type": "string"
+      },
+      "replyto_email_name": {
+        "type": "string"
+      },
+      "notification_subject_tag": {
+        "type": "string"
+      },
+      "ldap_dn": {
+        "type": "string"
+      },
+      "tag": {
+        "type": "string"
+      },
+      "authldap": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "mail_domain": {
+        "type": "string"
+      },
+      "entity_ldapfilter": {
+        "type": "string"
+      },
+      "mailing_signature": {
+        "type": "string"
+      },
+      "url_base": {
+        "type": "string"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  },
+  "Document": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "comment": {
+        "type": "string"
+      },
+      "entity": {
+        "type": "object"
+      },
+      "date_creation": {
+        "type": "string"
+      },
+      "date_mod": {
+        "type": "string"
+      },
+      "is_deleted": {
+        "type": "boolean"
+      },
+      "filename": {
+        "type": "string"
+      },
+      "mime": {
+        "type": "string"
+      },
+      "sha1sum": {
+        "type": "string"
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "link": {
+        "type": "string"
+      },
+      "user": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "checksum_sha1": {
+        "type": "string"
+      },
+      "is_import_denied": {
+        "type": "boolean"
+      },
+      "tag": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+}
