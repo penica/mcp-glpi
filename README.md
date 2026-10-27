@@ -1,336 +1,68 @@
-# MCP Server for GLPI v2.0
+# MCP GLPI 3
 
-A comprehensive Model Context Protocol (MCP) server providing full integration with GLPI (Gestionnaire Libre de Parc Informatique) for AI assistants like Claude.
+A TypeScript Model Context Protocol server for **GLPI 12 High-Level API v3**. This major version uses OAuth bearer tokens and only calls `/api.php/v3` for GLPI resources. It does not support the legacy `/apirest.php` API.
 
-## What's New in v2.0
+## Requirements
 
-- **ITIL Support**: Full Problem and Change management
-- **Asset Management**: Computers, Software, Network Equipment, Printers, Monitors, Phones
-- **Knowledge Base**: Search and create KB articles
-- **Contract & Supplier Management**: Track contracts and vendors
-- **Project Management**: Create and track projects
-- **Statistics**: Ticket and asset dashboards
-- **60+ Tools**: Comprehensive GLPI coverage
+- Node.js 18.18 or newer
+- GLPI 12 with the High-Level API v3 enabled
+- An OAuth client allowed to use the `password` grant and `api` scope
+- A GLPI user with permissions for the resources you intend to access
 
-## Features
+Create the OAuth client under **Setup → OAuth Clients** in GLPI. Use a dedicated GLPI account with the permissions appropriate for your MCP tools. Never commit credentials or place them in tool arguments.
 
-### Ticket Management (ITIL Incidents/Requests)
-| Tool | Description |
-|------|-------------|
-| `glpi_list_tickets` | List tickets with filters |
-| `glpi_get_ticket` | Get ticket details with followups and tasks |
-| `glpi_create_ticket` | Create a new ticket |
-| `glpi_update_ticket` | Update ticket fields |
-| `glpi_delete_ticket` | Delete a ticket |
-| `glpi_add_followup` | Add a followup comment |
-| `glpi_add_task` | Add a task with time tracking |
-| `glpi_add_solution` | Add solution to close ticket |
-| `glpi_assign_ticket` | Assign ticket to user/group |
-| `glpi_get_ticket_tasks` | Get ticket tasks (paginated) |
-| `glpi_get_ticket_followups` | Get ticket followups (paginated) |
-| `glpi_get_ticket_interactions` | Get followups/tasks/solutions/approvals (single or batch) |
-
-### Problem Management (ITIL)
-| Tool | Description |
-|------|-------------|
-| `glpi_list_problems` | List problems |
-| `glpi_get_problem` | Get problem details |
-| `glpi_create_problem` | Create a new problem |
-| `glpi_update_problem` | Update a problem |
-| `glpi_add_problem_followup` | Add followup to a problem |
-| `glpi_get_problem_followups` | Get problem followups (paginated) |
-| `glpi_add_problem_task` | Add task to a problem |
-| `glpi_get_problem_tasks` | Get problem tasks (paginated) |
-| `glpi_get_problem_interactions` | Get followups/tasks/solutions/approvals (single or batch) |
-
-### Change Management (ITIL)
-| Tool | Description |
-|------|-------------|
-| `glpi_list_changes` | List changes |
-| `glpi_get_change` | Get change details |
-| `glpi_create_change` | Create a new change |
-| `glpi_update_change` | Update a change |
-| `glpi_add_change_followup` | Add followup to a change |
-| `glpi_get_change_followups` | Get change followups (paginated) |
-| `glpi_add_change_task` | Add task to a change |
-| `glpi_get_change_tasks` | Get change tasks (paginated) |
-| `glpi_get_change_interactions` | Get followups/tasks/solutions/approvals (single or batch) |
-
-### Plugin Tags
-| Tool | Description |
-|------|-------------|
-| `glpi_list_plugin_tags` | List tags registered in plugin Tags |
-| `glpi_search_plugin_tag_items` | Search items linked to a tag (by `tag_id` or `tag_name`) |
-
-### Asset Management
-| Tool | Description |
-|------|-------------|
-| `glpi_list_computers` | List computers/workstations |
-| `glpi_get_computer` | Get computer with software/connections |
-| `glpi_create_computer` | Add computer to inventory |
-| `glpi_update_computer` | Update computer |
-| `glpi_delete_computer` | Remove computer |
-| `glpi_list_softwares` | List software |
-| `glpi_get_software` | Get software details |
-| `glpi_create_software` | Add software |
-| `glpi_list_network_equipments` | List switches/routers |
-| `glpi_get_network_equipment` | Get network device |
-| `glpi_list_printers` | List printers |
-| `glpi_get_printer` | Get printer details |
-| `glpi_list_monitors` | List monitors |
-| `glpi_get_monitor` | Get monitor details |
-| `glpi_list_phones` | List phones |
-| `glpi_get_phone` | Get phone details |
-
-### Knowledge Base
-| Tool | Description |
-|------|-------------|
-| `glpi_list_knowbase` | List KB articles |
-| `glpi_get_knowbase_item` | Get article content |
-| `glpi_search_knowbase` | Search knowledge base |
-| `glpi_create_knowbase_item` | Create new article |
-
-### Contract & Supplier Management
-| Tool | Description |
-|------|-------------|
-| `glpi_list_contracts` | List contracts |
-| `glpi_get_contract` | Get contract details |
-| `glpi_create_contract` | Create contract |
-| `glpi_list_suppliers` | List suppliers |
-| `glpi_get_supplier` | Get supplier details |
-| `glpi_create_supplier` | Create supplier |
-
-### Project Management
-| Tool | Description |
-|------|-------------|
-| `glpi_list_projects` | List projects |
-| `glpi_get_project` | Get project details |
-| `glpi_create_project` | Create project |
-| `glpi_update_project` | Update project progress |
-
-### User & Group Management
-| Tool | Description |
-|------|-------------|
-| `glpi_list_users` | List users |
-| `glpi_get_user` | Get user details |
-| `glpi_search_user` | Search user by name |
-| `glpi_create_user` | Create new user |
-| `glpi_list_groups` | List groups |
-| `glpi_get_group` | Get group details |
-| `glpi_create_group` | Create group |
-| `glpi_add_user_to_group` | Add user to group |
-
-### Other Tools
-| Tool | Description |
-|------|-------------|
-| `glpi_list_categories` | List ticket categories |
-| `glpi_list_locations` | List locations |
-| `glpi_get_location` | Get location details |
-| `glpi_create_location` | Create location |
-| `glpi_list_entities` | List entities |
-| `glpi_get_entity` | Get entity details |
-| `glpi_list_documents` | List documents |
-| `glpi_get_document` | Get document details |
-| `glpi_get_ticket_stats` | Ticket statistics |
-| `glpi_get_asset_stats` | Asset inventory stats |
-| `glpi_get_session_info` | Current session info |
-| `glpi_search` | Advanced multi-criteria search |
-
-### Pagination
-- Tools with `limit`/`offset` support enforce `limit` between `1` and `100`.
-- Default pagination is `limit=50` and `offset=0`.
-- Batch interaction tools accept `id` or `ids` (up to 100 IDs per request).
-
-### Resources (Quick Access)
-| Resource URI | Description |
-|--------------|-------------|
-| `glpi://tickets/open` | All open tickets |
-| `glpi://tickets/recent` | Recent tickets |
-| `glpi://problems/open` | Open problems |
-| `glpi://changes/pending` | Pending changes |
-| `glpi://computers` | All computers |
-| `glpi://groups` | All groups |
-| `glpi://categories` | Ticket categories |
-| `glpi://stats/tickets` | Ticket statistics |
-| `glpi://stats/assets` | Asset statistics |
-
-## Installation
+## Install and run
 
 ```bash
-npm install -g mcp-glpi
-```
-
-Or use directly with npx:
-
-```bash
-npx mcp-glpi
-```
-
-## Configuration
-
-### Environment Variables
-
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `GLPI_URL` | Yes | Base URL of your GLPI instance |
-| `GLPI_APP_TOKEN` | No | Application token from GLPI API settings |
-| `GLPI_USER_TOKEN` | No* | User API token |
-| `GLPI_USERNAME` | No* | Username for basic auth |
-| `GLPI_PASSWORD` | No* | Password for basic auth |
-
-*Either `GLPI_USER_TOKEN` or `GLPI_USERNAME`/`GLPI_PASSWORD` is required.
-
-### GLPI API Setup
-
-1. Go to **Setup > General > API** in GLPI
-2. Enable the REST API
-3. Create an API client and note the App Token
-4. For user authentication, either:
-   - Use a User Token (found in user preferences under "Remote access keys")
-   - Or use username/password authentication
-
-### Claude Desktop Configuration
-
-Add to your Claude Desktop configuration file:
-
-**macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-**Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
-
-```json
-{
-  "mcpServers": {
-    "glpi": {
-      "command": "npx",
-      "args": ["mcp-glpi"],
-      "env": {
-        "GLPI_URL": "https://your-glpi-instance.com",
-        "GLPI_APP_TOKEN": "your-app-token",
-        "GLPI_USER_TOKEN": "your-user-token"
-      }
-    }
-  }
-}
-```
-
-## Usage Examples
-
-Once configured, you can ask Claude to:
-
-### Ticket Management
-- "List all open tickets in GLPI"
-- "Show me ticket #123 with all its tasks"
-- "Create a new incident for a printer issue"
-- "Add a solution to ticket #456"
-- "Assign ticket #789 to the support team"
-
-### Problem & Change Management
-- "List all open problems"
-- "Create a change request for the server upgrade"
-- "Show me pending changes for approval"
-- "Add a followup to problem #123"
-- "List tasks from change #456 with limit 100 and offset 0"
-- "Get all interactions for tickets 10, 20 and 30"
-
-### Plugin Tags
-- "List all registered tags from plugin tags"
-- "Find items linked to tag 'VPN' in plugin tags"
-- "Search only Ticket links for tag #12 in plugin tags"
-
-### Asset Management
-- "List all computers in the inventory"
-- "Show me computer PC-001 with its installed software"
-- "Add a new workstation to the inventory"
-- "List all network equipment"
-
-### Knowledge Base
-- "Search the knowledge base for VPN setup"
-- "Create a KB article about password reset"
-- "List FAQ articles"
-
-### Reports & Statistics
-- "Show me ticket statistics"
-- "Give me an asset inventory summary"
-- "How many tickets are pending?"
-
-## Status References
-
-### Ticket Status
-| ID | Label |
-|----|-------|
-| 1 | New |
-| 2 | Processing (assigned) |
-| 3 | Processing (planned) |
-| 4 | Pending |
-| 5 | Solved |
-| 6 | Closed |
-
-### Problem Status
-| ID | Label |
-|----|-------|
-| 1 | New |
-| 2 | Accepted |
-| 3 | Planned |
-| 4 | Pending |
-| 5 | Solved |
-| 6 | Closed |
-
-### Change Status
-| ID | Label |
-|----|-------|
-| 1 | New |
-| 2 | Evaluation |
-| 3 | Approval |
-| 4 | Accepted |
-| 5 | Pending |
-| 6 | Test |
-| 7 | Qualification |
-| 8 | Applied |
-| 9 | Review |
-| 10 | Closed |
-
-### Urgency/Priority
-| ID | Label |
-|----|-------|
-| 1 | Very low |
-| 2 | Low |
-| 3 | Medium |
-| 4 | High |
-| 5 | Very high |
-
-## Development
-
-See the [GLPI 12 API v3 migration research](docs/glpi-high-level-api-migration.md), [migration log](docs/migration-log.md), and [changelog](CHANGELOG.md) for the planned move from the legacy API and release notes.
-
-### Building from source
-
-```bash
-git clone https://github.com/GMS64260/mcp-glpi.git
-cd mcp-glpi
-npm install
+npm ci
 npm run build
-```
-
-Run `npm run lint` to check the TypeScript and configuration files, and `npm test` to run Jest. Jest is configured, but there are no tests yet.
-
-### Running locally
-
-```bash
-export GLPI_URL="https://your-glpi-instance.com"
-export GLPI_USER_TOKEN="your-token"
+export GLPI_URL='https://your-glpi-instance.example'
+export GLPI_OAUTH_CLIENT_ID='your-client-identifier'
+export GLPI_OAUTH_CLIENT_SECRET='your-client-secret'
+export GLPI_USERNAME='your-glpi-username'
+export GLPI_PASSWORD='your-glpi-password'
 npm start
 ```
 
+For a stdio MCP host, configure the command as `node` with argument `/absolute/path/to/mcp-glpi/dist/index.js` and provide those five environment variables. The server obtains a password-grant access token from `/api.php/token`, renews it before expiry, retries once on a 401, and sends bearer tokens only to `/api.php/v3` resource routes. Tokens and credentials are never printed by the server.
+
+## Tool contracts
+
+The server advertises 90 tools across tickets, problems, changes, timelines, teams, assets, users, groups, entities, contracts, suppliers, locations, projects, documents, knowledge base, search, and statistics. `glpi_snake_case` names describe their operations. GLPI permissions determine which calls succeed.
+
+- List and search tools accept `filter` (v3 RSQL), `start`, `limit` (1–100), and `sort` (`property:asc` or `property:desc`). They return `{ "items": [...], "total": number }` when GLPI supplies a total header; otherwise `total` is omitted.
+- Get tools take `id` and return the v3 object. Timeline reads contain `{ "type": ..., "item": ... }` entries.
+- Create and update tools take a `data` object whose advertised JSON schema is derived from the instance's v3 OpenAPI document. Updates use `PATCH`; creation returns GLPI's new `id` and `href` when supplied.
+- `entity_id`, `profile_id`, and `entity_recursive` select GLPI scope through request headers. Delete tools accept `force` where the endpoint supports it.
+- `glpi_search` takes an `itemtype` from its advertised enum and a v3 `filter`. Numeric legacy search criteria are no longer accepted.
+
+Example tool arguments:
+
+```json
+{"filter":"name=ilike=*printer*","start":0,"limit":25,"sort":"id:desc"}
+```
+
+```json
+{"data":{"name":"Printer offline","content":"The third-floor printer is unavailable."}}
+```
+
+```json
+{"id":123,"data":{"type":"User","id":7,"role":"assigned"}}
+```
+
+The [migration log](docs/migration-log.md) maps all 82 previous tools to v3 operations or removals. The [changelog](CHANGELOG.md) lists breaking changes. The schema source is the target instance's [v3 OpenAPI document](https://helpdesk.penic.net/api.php/v3/doc.json); other GLPI installations may publish different extensions or schema details.
+
+## Development
+
+```bash
+npm ci
+npm run build
+npm run lint
+npm test -- --runInBand
+```
+
+The generated `dist/` directory is ignored. Tests mock OAuth and API responses; live checks require your own disposable GLPI records and credentials. The `dev` script is not supported because `ts-node` is not installed.
+
 ## License
 
-MIT
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## Links
-
-- [GLPI Project](https://glpi-project.org/)
-- [GLPI API Documentation](https://glpi-user-documentation.readthedocs.io/)
-- [Model Context Protocol](https://modelcontextprotocol.io/)
-- [NPM Package](https://www.npmjs.com/package/mcp-glpi)
+MIT. See [LICENSE](LICENSE).

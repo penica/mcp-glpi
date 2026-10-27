@@ -2,11 +2,11 @@
 
 ## Project Structure & Module Organization
 
-This is a TypeScript MCP server. `src/index.ts` defines MCP tools, resources, configuration, and the stdio server. `src/glpi-client.ts` holds GLPI HTTP calls and response types. `README.md` covers installation; `docs/glpi-high-level-api-migration.md` records the GLPI 12 API v3 migration plan, and `docs/migration-log.md` records progress. Keep release-facing changes in `CHANGELOG.md`. `dist/` is generated build output and is ignored. There are no test files or static assets yet.
+This is a TypeScript MCP server. `src/index.ts` defines MCP tools, resources, configuration, and the stdio server. `src/glpi-client.ts` holds GLPI HTTP calls and response types. `README.md` covers installation; `docs/glpi-high-level-api-migration.md` records the GLPI 12 API v3 migration plan, and `docs/migration-log.md` records progress. Keep release-facing changes in `CHANGELOG.md`. `dist/` is generated build output and is ignored. Tests are in `tests/`; v3 writable input schemas are in `src/v3-schemas.json`.
 
 ## Build, Test, and Development Commands
 
-Use Node.js 18.18 or newer for development. Run `npm ci` to install from the lockfile and `npm run build` to compile `src/` into `dist/`; `npm run watch` recompiles during development. Run `npm run lint` for ESLint and `npm test` for Jest. Run `npm start` after building and setting `GLPI_URL` plus the current legacy API credentials described in `README.md`. The `dev` script still requires `ts-node`, which is not installed.
+Use Node.js 18.18 or newer for development. Run `npm ci` to install from the lockfile and `npm run build` to compile `src/` into `dist/`; `npm run watch` recompiles during development. Run `npm run lint` for ESLint and `npm test` for Jest. Run `npm start` after building and setting the five v3 OAuth environment variables described in `README.md`. The `dev` script still requires `ts-node`, which is not installed.
 
 ## Coding Style & Naming Conventions
 
@@ -14,7 +14,7 @@ Follow the existing two-space indentation, single quotes, and semicolons. TypeSc
 
 ## Testing Guidelines
 
-Jest is configured in `jest.config.cjs`, but there are no tests or coverage thresholds yet. Put new tests in `tests/` with `*.test.ts` names; cover API authentication, payload mapping, pagination, and errors. `npm test` currently reports no tests and exits successfully. Verify GLPI 12 v3 behavior against its versioned OpenAPI document and a disposable instance before claiming endpoint compatibility.
+Jest is configured in `jest.config.cjs`; put new tests in `tests/` with `*.test.ts` names. Cover API authentication, payload mapping, pagination, permissions, and errors. Verify GLPI 12 v3 behavior against its versioned OpenAPI document and a disposable instance before claiming endpoint compatibility.
 
 ## Commit & Pull Request Guidelines
 
