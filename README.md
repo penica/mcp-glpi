@@ -50,7 +50,7 @@ Example tool arguments:
 {"id":123,"data":{"type":"User","id":7,"role":"assigned"}}
 ```
 
-The [migration log](docs/migration-log.md) maps all 82 previous tools to v3 operations or removals. The [changelog](CHANGELOG.md) lists breaking changes. The schema source is the target instance's [v3 OpenAPI document](https://helpdesk.penic.net/api.php/v3/doc.json); other GLPI installations may publish different extensions or schema details.
+The [migration log](docs/migration-log.md) maps all 82 previous tools to v3 operations or removals. The [candidate tool list](docs/additional-v3-tools.md) prioritizes useful v3 routes that are not yet integrated. The [changelog](CHANGELOG.md) lists breaking changes. The schema source is the target instance's [v3 OpenAPI document](https://helpdesk.penic.net/api.php/v3/doc.json); other GLPI installations may publish different extensions or schema details.
 
 ## Development
 
