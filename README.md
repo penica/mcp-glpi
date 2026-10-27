@@ -299,7 +299,7 @@ Once configured, you can ask Claude to:
 
 ## Development
 
-See the [GLPI 12 API v3 migration research](docs/glpi-high-level-api-migration.md) and [migration log](docs/migration-log.md) for the planned move from the legacy API.
+See the [GLPI 12 API v3 migration research](docs/glpi-high-level-api-migration.md), [migration log](docs/migration-log.md), and [changelog](CHANGELOG.md) for the planned move from the legacy API and release notes.
 
 ### Building from source
 
