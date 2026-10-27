@@ -10,6 +10,15 @@ This log tracks the GLPI 12 API v3 migration. The instance OpenAPI document at `
 - Live verification: authenticated session and 22 collection/statistic reads passed; a dedicated ticket passed create, read, update, filtered search, and forced delete. A dedicated timeline ticket accepted followup, task, and team member writes and was deleted.
 - Jest, TypeScript build, and ESLint passed.
 
+## 3.1.0 expansion — 2026-10-27
+
+- Added 192 tools for the three priority groups in the expansion inventory. The catalog now contains 282 unique tool names. Every concrete method and route, including all enum expansions, matched the target instance's 1,181-path v3 OpenAPI document.
+- Added typed path resolution, selected writable schemas, a generated route manifest, a separate OAuth `user` scope token for current-user routes, and bounded binary document resources. The 3.0.0 schemas are preserved for existing tool compatibility.
+- Corrected the candidate inventory: v3 publishes no top-level SoftwareLicense or DCRoom CRUD route. Management License CRUD is included; DCRoom remains available only in published relationship routes.
+- Live reads passed for new project, asset, management, administration, inventory, webhook, notification, rule, security, dropdown, recurring, and statistics families. Characteristic statistics need `field`; `priority` passed. The server returned an error for `status` on that endpoint, so supported group fields remain determined by GLPI.
+- Dedicated records passed create/read/update/delete checks for assets, budgets, contacts, licenses, project tasks and links, ticket validation, knowledge base articles and comments, recurring tickets, and computer volume and contract relationships. All created records were deleted. A metadata-only document could not be downloaded; an existing document downloaded successfully through the MCP binary resource. Ticket document linking returned 403 even for a dedicated test ticket and document; the tool uses the controller's `Document_Item` schema, and this route remains unverified on the target instance. No inventory request was sent to a real agent.
+- Build, lint, Jest, MCP stdio, binary resource checks, and `npm audit` (zero vulnerabilities) passed. The temporary OAuth client used for verification was removed.
+
 ## Existing tool inventory
 
 Every retained list or search tool now accepts `filter`, `start`, `limit`, and `sort` where supported; list responses are `{items, total?}`. Every retained create or update tool accepts a v3 schema `data` object directly and returns the v3 response. Item reads return v3 nested schemas. The tool catalog is the exact argument source; old flat arguments, `range`, `criteria`, legacy `with_*` flags, and old session outputs are removed. `entity_id`, `profile_id`, and `entity_recursive` map to the v3 scope headers.

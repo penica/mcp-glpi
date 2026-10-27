@@ -1,5 +1,20 @@
 # Changelog
 
+## 3.1.0 — 2026-10-27
+
+### Added
+
+- Expanded from 90 to 282 v3 MCP tools: assistance timeline item lifecycle, validations, costs and recurring items; project tasks and links; asset CRUD and computer relationships; knowledge base comments and revisions; management and administration workflows; dropdown lookups, statistics, inventory, rules, and security reads.
+- Added authenticated `glpi://document/{id}/content` resources for binary downloads up to 10 MiB. Document tools return resource links, keeping base64 out of ordinary tool text.
+- Added reproducible OpenAPI schema and route-manifest generation and route-contract tests for every advertised tool. Updated the MCP SDK and its transitive lockfile dependencies; `npm audit` reports zero vulnerabilities.
+
+### Behavior and verification
+
+- Current-user tools obtain the OAuth `user` scope separately; their OAuth client must allow that scope. Existing API tools continue to use `api` scope.
+- Characteristic statistics require a `field` argument, as the v3 endpoint requires. Webhook reads omit credential fields.
+- Live checks passed for 26 new read routes after supplying required scope and statistics parameters; dedicated asset, management, project, assistance, knowledge base, and recurring records passed representative writes and were deleted. A document resource was read through MCP from an existing document. Ticket document linking returned 403 on a dedicated test record and remains unverified on the target instance; inventory requests were covered by mocked tests only.
+
+
 ## 3.0.0 — 2026-10-27
 
 ### Breaking changes

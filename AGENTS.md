@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This is a TypeScript MCP server. `src/index.ts` defines MCP tools, resources, configuration, and the stdio server. `src/glpi-client.ts` holds GLPI HTTP calls and response types. `README.md` covers installation; `docs/glpi-high-level-api-migration.md` records the GLPI 12 API v3 migration plan, and `docs/migration-log.md` records progress. Keep release-facing changes in `CHANGELOG.md`. `dist/` is generated build output and is ignored. Tests are in `tests/`; v3 writable input schemas are in `src/v3-schemas.json`.
+This is a TypeScript MCP server. `src/index.ts` defines MCP tools, resources, configuration, and the stdio server. `src/glpi-client.ts` holds GLPI HTTP calls and response types. `README.md` covers installation; `docs/glpi-high-level-api-migration.md` records the GLPI 12 API v3 migration plan, and `docs/migration-log.md` records progress. Keep release-facing changes in `CHANGELOG.md`. `dist/` is generated build output and is ignored. Tests are in `tests/`; v3 writable input schemas are in `src/v3-schemas.json`, generated with `scripts/sync-v3-contract.py`. The route manifest is `src/v3-routes.json`.
 
 ## Build, Test, and Development Commands
 
